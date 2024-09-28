@@ -1,0 +1,96 @@
+/* Dark Mode */
+body.dark-mode {
+    background-color: #252526;
+    color: white;
+  }
+  
+  /* Override specific Bootstrap text color classes in dark mode */
+  body.dark-mode .text-body-emphasis {
+    color: white !important;
+  }
+  
+  /* Ensure other text elements like h1, h2, p, etc., are affected */
+  body.dark-mode h1, 
+  body.dark-mode h2, 
+  body.dark-mode h3, 
+  body.dark-mode p, 
+  body.dark-mode a {
+    color: white;
+  }
+  
+  /* Ensure buttons stay visible in dark mode */
+  body.dark-mode .btn-outline-light {
+    border-color: white;
+    color: white;
+  }
+  
+  /* When dark mode is active, change the button to light color */
+  body.dark-mode #darkModeToggle {
+    background-color: white;
+    color: #252526;
+    border-color: white;
+  }
+  
+  /* Default dark mode button in normal mode */
+  #darkModeToggle {
+    background-color: black;
+    color: white;
+    border-color: black;
+  }
+.btn {
+    width: 180px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    margin-right: 5px; /* Add some margin between buttons */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Make the icon fill the button */
+.btn i {
+    margin-right: 8px; /* Space between the icon and text */
+    font-size: 1rem; /* Adjust icon size */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    position: relative; /* Allow position adjustments */
+    top: 1px; /* Slightly adjust vertical position */
+}
+
+/* Optional: Adjust text size for better alignment */
+.btn span {
+    font-size: 1em; /* Adjust text size if needed */
+}
+
+.custom-small {
+    font-size: 1rem; /* Adjust the size as needed */
+}
+
+.large-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Dark Mode Styles */
+body.dark-mode .btn {
+    border: 1px solid white; /* White border in dark mode */
+    color: white; /* White text in dark mode */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+}
+
+/* Ensure the icon and text are visible in dark mode */
+body.dark-mode .btn i {
+    color: white; /* White icon in dark mode */
+}
+
+body.dark-mode .btn span {
+    color: white; /* White text in dark mode */
+}
+
+/* Dark mode: Light Mode button adjustment (Not fully white) */
+body.dark-mode #darkModeToggle {
+    background-color: rgba(255, 255, 255, 0.2); /* Light, but not fully white */
+    color: black; /* Dark text for better visibility */
+    border: 1px solid white; /* White border for consistency */
+}
